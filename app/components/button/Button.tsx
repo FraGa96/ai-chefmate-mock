@@ -6,18 +6,15 @@ type ButtonProps = {
   label?: string;
   withIcon?: boolean;
   rotateIconDg?: number;
-};
+} & React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
+
 const Button = ({
   variant = 'default',
   label = '',
   withIcon = false,
   rotateIconDg = 0,
+  ...buttonProps
 }: ButtonProps) => {
-  const handleClick = () => {
-    // TODO: Connect to function on prop
-    console.log('aaaaa');
-  };
-
   const variantProps = useMemo(() => {
     switch (variant) {
       case 'light':
@@ -41,12 +38,14 @@ const Button = ({
         };
     }
   }, []);
+
   return (
     <button
-      type="button" onClick={handleClick}
+      type="button"
       className={`${variantProps.bg} ${variantProps.border} ${variantProps.text}`
         + ' px-10 py-4.5 rounded-full border-2 text-[22px] capitalize font-medium'
         + ' flex items-center gap-2 cursor-pointer'}
+      {...buttonProps}
     >
       {label}
 
