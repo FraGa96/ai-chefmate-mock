@@ -1,3 +1,4 @@
+import Button from '~/components/button';
 import logoDark from './logo-dark.svg';
 import logoLight from './logo-light.svg';
 
@@ -41,6 +42,8 @@ export function Welcome() {
             </ul>
           </nav>
         </div>
+        
+        <Button label="example" variant="light" rotateIconDg={180}/>
       </div>
     </main>
   );
