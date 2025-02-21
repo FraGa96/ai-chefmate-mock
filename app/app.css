@@ -16,3 +16,33 @@ body {
     color-scheme: dark;
   }
 }
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    color: var(--color-custom-green);
+  }
+
+  h1 {
+    font-size: 61px;
+  }
+
+  h2 {
+    font-size: 55px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  h4 {
+    font-size: 34px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+}

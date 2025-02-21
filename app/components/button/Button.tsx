@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import arrow from './arrow.svg';
 
 type ButtonProps = {
-  variant?: 'default' | 'light' | 'green',
+  variant?: 'default' | 'light' | 'green' | 'simpleGreen',
   label?: string;
   withIcon?: boolean;
   rotateIconDg?: number;
@@ -21,6 +21,12 @@ const Button = ({
         return {
           bg: 'bg-custom-light',
           border: 'border-custom-green',
+          text: 'text-custom-green',
+        };
+      case 'simpleGreen':
+        return {
+          bg: 'bg-custom-light-green',
+          border: 'border-custom-light-green',
           text: 'text-custom-green',
         };
       case 'green':
