@@ -49,8 +49,9 @@ const Button = ({
     <button
       type="button"
       className={`${variantProps.bg} ${variantProps.border} ${variantProps.text}`
-        + ' px-10 py-4.5 rounded-full border-2 text-[22px] capitalize font-medium'
-        + ' flex items-center gap-2 cursor-pointer'}
+        + ' px-9 py-3.5 rounded-full border-2 text-[18px] capitalize font-medium'
+        + ' flex items-center gap-2 cursor-pointer'
+        + ' lg:text-[22px] lg:py-4.5 lg:px-10'}
       {...buttonProps}
     >
       {label}

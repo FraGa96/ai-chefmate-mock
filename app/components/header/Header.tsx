@@ -2,16 +2,24 @@ import { NavLink } from 'react-router';
 import logo from './logo.svg';
 import Button from '../button';
 
+// TODO: Sidebar for mobile view
 const Header = () => {
   return (
     <header
-      className={'bg-custom-light py-10 px-20 sticky top-0 z-1'
+      className={'bg-custom-light py-8 px-5 sticky top-0 z-1'
         + ' flex items-center justify-between'
+        + ' md:py-10 md:px-20'
       }
     >
       <img alt="AI Chefmate" src={logo} />
 
-      <nav className="flex gap-20 [&>a]:text-custom-green [&>a]:text-[22px] ml-40">
+      <nav
+        className={'flex gap-5 [&>a]:text-custom-green [&>a]:text-[18px] ml-10'
+          + ' sm:gap-7'
+          + ' md:ml-20 gap-15'
+          + ' lg:[&>a]:text-[22px] lg:gap-20 lg:ml-40'
+        }
+      >
         <NavLink to="/recipes">Recipes</NavLink>
 
         <NavLink to="/blog" >Blog</NavLink>
@@ -20,7 +28,15 @@ const Header = () => {
       </nav>
 
       <div className="flex items-center gap-2">
-        <NavLink className="text-custom-green text-[22px]" to="/recipes">Log In</NavLink>
+        <NavLink
+          className={'text-custom-green text-[18px]'
+            + ' lg:text-[22px]'
+          }
+          to="/recipes"
+        >
+          Log In
+        </NavLink>
+
         <Button label="Start For Free" />
       </div>
     </header >
