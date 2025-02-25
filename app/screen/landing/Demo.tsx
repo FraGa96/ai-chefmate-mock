@@ -3,6 +3,8 @@ import SectionTitle from '~/components/sectionTitle';
 // import { useBreakpoints } from '~/hooks/useBreakpoints';
 // const VIMEO_DEMO = 'https://vimeo.com/235215203';
 
+
+// TODO: SSR is provocking errors when trying to import vimeo library
 const Demo = () => {
 //   const all = useBreakpoints();
 //   console.log(all);
