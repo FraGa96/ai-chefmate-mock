@@ -5,14 +5,14 @@ type ButtonProps = {
   variant?: 'default' | 'light' | 'green' | 'simpleGreen',
   label?: string;
   withIcon?: boolean;
-  rotateIconDg?: number;
+  iconClassName?: string;
 } & React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
 
 const Button = ({
-  variant = 'default',
+  iconClassName='',
   label = '',
+  variant = 'default',
   withIcon = false,
-  rotateIconDg = 0,
   ...buttonProps
 }: ButtonProps) => {
   const variantProps = useMemo(() => {
@@ -50,14 +50,14 @@ const Button = ({
       type="button"
       className={`${variantProps.bg} ${variantProps.border} ${variantProps.text}`
         + ' px-9 py-3.5 rounded-full border-2 text-[18px] capitalize font-medium'
-        + ' flex items-center gap-2 cursor-pointer'
+        + ' flex items-center gap-2 cursor-pointer [&:disabled]:bg-custom-light'
         + ' lg:text-[22px] lg:py-4.5 lg:px-10'}
       {...buttonProps}
     >
       {label}
 
       {withIcon && (
-        <img alt="arrow" className={`w-5 h-7 rotate-${rotateIconDg}`} src={arrow} />
+        <img alt="arrow" className={`w-5 h-7 ${iconClassName}`} src={arrow} />
       )}
     </button>
   );

@@ -9,7 +9,7 @@ const Demo = () => {
 //   const all = useBreakpoints();
 //   console.log(all);
   return (
-    <div className="pl-10 relative">
+    <div className="pl-10 relative pb-20">
       <div className="w-full h-20">
         <div
           className={'hidden h-20 absolute w-[50%]'

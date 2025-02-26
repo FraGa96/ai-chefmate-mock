@@ -1,5 +1,6 @@
 import Welcome from './Welcome';
 import Demo from './Demo';
+import HowItWorks from './HowItWorks';
 
 const Landing = () => {
   return (
@@ -7,6 +8,8 @@ const Landing = () => {
       <Welcome />
 
       <Demo />
+
+      <HowItWorks />
     </main>
   );
 };
