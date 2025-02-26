@@ -29,7 +29,7 @@ interface StepProps {
   title: string;
 }
 const Step = ({ title, description, pos }: StepProps) => (
-  <div className="h-[300px]">
+  <div className="min-h-[300px]">
     <h3 className="flex flex-col mb-10">
       <i className="lg:text-[61px]">{String(pos).padStart(2, '0')}</i>
 
@@ -46,11 +46,11 @@ interface PhotosProps {
 const Photos = ({
   selectedStep = 0,
 }: PhotosProps) => {
-  const classNameStepSelected = 'absolute left-1/32 lg:rotate-15 lg:left-7/32'
+  const classNameStepSelected = 'absolute left-1/32 lg:rotate-5 lg:left-1/16 xl:rotate-15 xl:left-7/32'
     + ' w-[407.89px] lg:w-[477.89px] xl:w-[517.89px] 2xl:w-[567.89px]';
-  const classNameNextStep = 'absolute -top-1/32 left-3/32 hidden rotate-5 lg:flex'
+  const classNameNextStep = 'absolute -top-1/32 left-3/32 hidden rotate-5 xl:flex'
     + ' w-[427.89px] lg:w-[477.89px] xl:w-517.89px] 2xl:w-[567.89px]';
-  const classNameLastStep = 'absolute top-1/16 hidden lg:flex'
+  const classNameLastStep = 'absolute top-1/16 hidden xl:flex'
     + ' w-[278px] lg:w-[348px] xl:w-[398px] 2xl:w-[448px]';
 
   const classNameStepSelectedBg = '';
@@ -112,7 +112,7 @@ const HowItWorks = () => {
   }, []);
 
   return (
-    <div className="px-10 pt-20 bg-custom-light relative">
+    <div className="px-10 lg:px-20 pt-20 bg-custom-light relative">
       <SectionTitle
         title="How it works"
         description="Step into the world of hassle-free meal planning with our easy 3-step process"
