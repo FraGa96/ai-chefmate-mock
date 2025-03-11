@@ -1,6 +1,7 @@
 import Welcome from './Welcome';
 import Demo from './Demo';
 import HowItWorks from './HowItWorks';
+import Benefits from './Benefits';
 
 const Landing = () => {
   return (
@@ -10,6 +11,8 @@ const Landing = () => {
       <Demo />
 
       <HowItWorks />
+
+      <Benefits />
     </main>
   );
 };

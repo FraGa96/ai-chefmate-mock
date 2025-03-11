@@ -12,6 +12,7 @@ export const useBreakpoints = () => {
   const [lg, setLg] = useState(false);
   const [xl, setXl] = useState(false);
   const [xxl, setXxl] = useState(false);
+  const [screenSize, setScreenSize] = useState('xxl');
 
   useEffect(() => {
     const handleResize = () => {
@@ -20,6 +21,21 @@ export const useBreakpoints = () => {
       setLg(window.outerWidth >= LG);
       setXl(window.outerWidth >= XL);
       setXxl(window.outerWidth >= XXL);
+      if(window.outerWidth >= SM) {
+        setScreenSize('sm');
+      }
+      if(window.outerWidth >= MD) {
+        setScreenSize('md');
+      }
+      if(window.outerWidth >= LG) {
+        setScreenSize('lg');
+      }
+      if(window.outerWidth >= XL) {
+        setScreenSize('xl');
+      }
+      if(window.outerWidth >= XXL) {
+        setScreenSize('xxl');
+      }
     };
     window.addEventListener('resize', handleResize);
     handleResize();
@@ -34,5 +50,6 @@ export const useBreakpoints = () => {
     lg,
     xl,
     xxl,
+    screenSize,
   };
 };
