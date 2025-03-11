@@ -3,6 +3,7 @@ import Demo from './Demo';
 import HowItWorks from './HowItWorks';
 import Benefits from './Benefits';
 import Recipes from './Recipes';
+import Testimonials from './Testimonials';
 
 const Landing = () => {
   return (
@@ -16,6 +17,8 @@ const Landing = () => {
       <Benefits />
 
       <Recipes />
+
+      <Testimonials />
     </main>
   );
 };
