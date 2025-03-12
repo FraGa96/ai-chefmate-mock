@@ -2,14 +2,14 @@ import { useMemo } from 'react';
 import arrow from './arrow.svg';
 
 type ButtonProps = {
-  variant?: 'default' | 'light' | 'green' | 'simpleGreen',
+  variant?: 'default' | 'light' | 'green' | 'simpleGreen' | 'white',
   label?: string;
   withIcon?: boolean;
   iconClassName?: string;
 } & React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
 
 const Button = ({
-  iconClassName='',
+  iconClassName = '',
   label = '',
   variant = 'default',
   withIcon = false,
@@ -36,6 +36,12 @@ const Button = ({
           border: 'border-custom-green',
           text: 'text-custom-green',
         };
+      case 'white':
+        return {
+          bg: 'bg-white',
+          border: 'border-custom-green',
+          text: 'text-custom-green',
+        };
       case 'default':
       default:
         return {
@@ -44,7 +50,7 @@ const Button = ({
           text: 'text-white',
         };
     }
-  }, []);
+  }, [variant]);
 
   return (
     <button
