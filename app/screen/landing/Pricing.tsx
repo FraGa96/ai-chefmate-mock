@@ -17,11 +17,11 @@ const Plan = ({ title, price, detailList, bestFor, buttonLabel, pos }: PlanProps
   const className = useMemo(() => {
     switch (pos) {
       case 0:
-        return 'max-w-[450px] md:border-r-0 md:rounded-r-none md:rounded-l-[43px]';
+        return 'max-w-[450px] lg:border-r-0 lg:rounded-r-none lg:rounded-l-[43px]';
       case 1:
         return 'bg-custom-light-green max-w-[480px] pb-[100px]';
       case 2:
-        return 'max-w-[450px] md:border-l-0 md:rounded-l-none md:rounded-r-[43px]';
+        return 'max-w-[450px] lg:border-l-0 lg:rounded-l-none lg:rounded-r-[43px]';
       default:
         return '';
     }
@@ -71,7 +71,7 @@ const Pricing = () => {
       />
 
       <div
-        className={'flex flex-col mt-10 md:flex-row items-center justify-center gap-5 md:gap-0'}
+        className={'flex flex-col mt-10 lg:flex-row items-center justify-center gap-5 lg:gap-0'}
       >
         <img alt="" className="hidden xl:block" src={planLeft} />
 
