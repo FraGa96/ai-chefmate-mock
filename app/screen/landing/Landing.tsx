@@ -7,6 +7,7 @@ import Testimonials from './Testimonials';
 import Pricing from './Pricing';
 import Insights from './Insights';
 import FAQ from './FAQ';
+import Support from './Support';
 
 const Landing = () => {
   return (
@@ -28,6 +29,8 @@ const Landing = () => {
       <Insights />
 
       <FAQ />
+
+      <Support />
     </main>
   );
 };
