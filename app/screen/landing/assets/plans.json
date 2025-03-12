@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "title": "Free Plan",
+    "price": 0,
+    "details": [
+      "Basic AI meal planning",
+      "Limited recipe access",
+      "Manual grocery list creation"
+    ],
+    "bestFor": "Those who want to explore thae platform's basic functionalities.",
+    "buttonLabel": "Get Started For Free"
+  },
+  {
+    "id": 2,
+    "title": "Standard Plan",
+    "price": 9.99,
+    "details": [
+      "Comprehensive AI meal planning",
+      "Full recipe library access",
+      "Automated grocery lists",
+      "Grocery delivery integration"
+    ],
+    "bestFor": "Individuals or families looking for full meal planning support and convenience.",
+    "buttonLabel": "Subscribe Now"
+  },
+  {
+    "id": 3,
+    "title": "Premium Plan",
+    "price": 19.99,
+    "details": [
+      "All Standard features",
+      "Exclusive gourmet recipes",
+      "Nutritional consultations",
+      "Advanced customization options"
+    ],
+    "bestFor": "Users seeking a premium culinary experience with added personalization and expert guidance.",
+    "buttonLabel": "Go Premium"
+  }
+]
