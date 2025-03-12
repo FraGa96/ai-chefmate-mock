@@ -20,17 +20,17 @@ const Header = () => {
           + ' lg:[&>a]:text-[22px] lg:gap-20 lg:ml-40'
         }
       >
-        <NavLink to="/recipes">Recipes</NavLink>
+        <NavLink to="/recipes" className="font-(family-name:--font-worksans) font-medium">Recipes</NavLink>
 
-        <NavLink to="/blog" >Blog</NavLink>
+        <NavLink to="/blog" className="font-(family-name:--font-worksans) font-medium">Blog</NavLink>
 
-        <NavLink to="/support" >Customer Support</NavLink>
+        <NavLink to="/support" className="font-(family-name:--font-worksans) font-medium">Customer Support</NavLink>
       </nav>
 
       <div className="flex items-center gap-2">
         <NavLink
           className={'text-custom-green text-[18px]'
-            + ' lg:text-[22px]'
+            + ' lg:text-[22px] font-(family-name:--font-worksans) font-medium'
           }
           to="/recipes"
         >

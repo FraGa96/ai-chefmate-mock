@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -6,6 +7,7 @@
   --color-custom-green: #213d34;
   --color-custom-light-green: #d9ef78;
   --color-custom-light: #f1f2ed;
+  --font-worksans: "Work Sans", ui-sans-serif;
 }
 
 html,
@@ -28,21 +30,26 @@ body {
 
   h1 {
     font-size: 61px;
+    font-family: "Syne";
   }
 
   h2 {
     font-size: 55px;
+    font-family: "Syne";
   }
 
   h3 {
     font-size: 40px;
+    font-family: "Syne";
   }
 
   h4 {
     font-size: 34px;
+    font-family: "Syne";
   }
 
   p {
     font-size: 22px;
+    font-family: "Work Sans";
   }
 }

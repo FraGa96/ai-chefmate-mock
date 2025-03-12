@@ -31,7 +31,7 @@ interface StepProps {
 const Step = ({ title, description, pos }: StepProps) => (
   <div className="min-h-[300px]">
     <h3 className="flex flex-col mb-10">
-      <i className="lg:text-[61px]">{String(pos).padStart(2, '0')}</i>
+      <span className="lg:text-[61px]">{String(pos).padStart(2, '0')}</span>
 
       {title}
     </h3>
@@ -141,7 +141,7 @@ const HowItWorks = () => {
             </div>
 
             <div className="z-1">
-              <p>
+              <p className="font-[Syne]">
                 {String(step + 1).padStart(2, '0')}/{String(STEPS.length).padStart(2, '0')}
               </p>
             </div>

@@ -57,7 +57,7 @@ const Plan = ({ title, price, detailList, bestFor, buttonLabel, pos }: PlanProps
         <b>Best For:</b> {bestFor}
       </p>
 
-      <Button className="justify-center" variant="light" label={buttonLabel} />
+      <Button className="justify-center" variant={pos === 1 ? 'default' : 'white'} label={buttonLabel} />
     </div>
   );
 };

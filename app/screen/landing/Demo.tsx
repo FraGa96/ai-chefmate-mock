@@ -81,8 +81,8 @@ const Demo = () => {
             </div>
 
             <p
-              className={'text-[30px] flex-2/3 text-center'
-                + ' lg:text-right lg:text-[46px] xl:text-[66px]'}
+              className={'text-[30px] flex-1/3 text-center'
+                + ' lg:text-right lg:text-[46px] xl:text-[66px] font-[Syne]'}
             >
               Every meal is a chance to nourish your body, inspire your mind, and feed your soul.
             </p>
